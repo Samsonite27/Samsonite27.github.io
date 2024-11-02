@@ -1,0 +1,64 @@
+Programming for Scientists: Project 2 feedback
+
+Review:
+Generally a good result even if it was a day late (-5% penalty). Annoyingly lost two marks dye to not having brackets around the polynomial coefficients. I presume it wanted you to use the toString() function on the entire instance class instead of getReal(). Last part it seems to say that I calculated dz wrong. I wonder if this is an off by one error and I didnt count properly, when I initially wrote it I was unsure of the functions meaning. I did 2/400, 2/399 is correct dz value. 
+
+File Complex.java compiled (1 Mark) 
+File Polynomial.java compiled (1 Mark) 
+File Secant.java compiled (1 Mark) 
+File Project2.java compiled (1 Mark) 
+
+Executing 17 out of 17 tests Running Test 1 ... 
+
+==== Test 1 ==== Complex constructor 
+Correct Value: 1.000+7.000i Student Value: 1.000+7.000i Correct: true Marks available: 1 Marks awarded: 1 
+
+========== Running Test 2 ... ==== Test 2 ==== 
+Complex.abs() Correct Value: -2.000+2.000i Student Value: -2.000+2.000i Correct: true Marks available: 1 Marks awarded: 1 
+
+========== Running Test 3 ... ==== Test 3 ==== 
+Complex.add() Correct Value: 2.000-0.500i Student Value: 2.000-0.500i Correct: true Marks available: 1 Marks awarded: 1 
+
+========== Running Test 4 ... ==== Test 4 ====
+Complex.multiply() Correct Value: 3.500+0.500i Student Value: 3.500+0.500i Correct: true Marks available: 1 Marks awarded: 1 
+
+========== Running Test 5 ... ==== Test 5 ==== 
+Complex.divide() Correct Value: 0.500+0.000i Student Value: 0.500+0.000i Correct: true Marks available: 1 Marks awarded: 1 
+
+========== Running Test 6 ... ==== Test 6 ==== Polynomial constructor (normal test) 
+Correct Value: (1.000+0.000i) + (2.000+2.000i)z + (3.000+3.000i)z^2 Student Value: 1.000+0.000i + 2.000+2.000iz + 3.000+3.000iz^2 Correct: true Marks available: 1 Marks awarded: 1 
+
+========== Running Test 7 ... ==== Test 7 ==== Polynomial constructor (zeros at end) 
+Correct Value: (1.000+0.000i) + (2.000+2.000i)z + (3.000+3.000i)z^2 Student Value: 1.000+0.000i + 2.000+2.000iz + 3.000+3.000iz^2 Correct: true Marks available: 1 Marks awarded: 1 
+
+========== Running Test 8 ... ==== Test 8 ==== Polynomial.degree() 
+Correct Value: 2 Student Value: 2 Correct: true Marks available: 1 Marks awarded: 1 
+
+========== Running Test 9 ... ==== Test 9 ==== Polynomial.evaluate() 
+Correct Value: -16.000+11.000i Student Value: -16.000+11.000i Correct: true Marks available: 2 Marks awarded: 2 
+
+========== Running Test 10 ... ==== Test 10 ==== Polynomial.toString() 
+Correct Value: (0.000+0.000i) + (2.000+1.000i)z + (0.000+0.000i)z^2 + (2.000-2.000i)z^3 ]> +(2.000+1.000i)X+(2.000-2.000i)X^3 <[ Student Value: 0.000+0.000i + 2.000+1.000iz + 0.000+0.000iz^2 + 2.000-2.000iz^3 ]> 0.000+0.000i+2.000+1.000iz+0.000+0.000iz^2+2.000-2.000iz^3 <[ Correct: false Marks available: 1 Marks awarded: 0 
+
+========== Running Test 11 ... ==== Test 11 ==== Polynomial.toString() (constant polynomial) 
+Correct Value: (1.000+2.000i) ]> (1.000+2.000i) <[ Student Value: 1.000+2.000i ]> 1.000+2.000i <[ Correct: false Marks available: 1 Marks awarded: 0 
+
+========== Running Test 12 ... ==== Test 12 ==== Secant.iterate() 
+Correct Value: -0.500+0.866i Student Value: -0.500+0.866i Correct: true Marks available: 3 Marks awarded: 3 
+
+========== Running Test 13 ... ==== Test 13 ==== Secant.iterate() (err = ZERO) 
+Correct Value: 1 Student Value: 1 Correct: true Marks available: 2 Marks awarded: 2 
+
+========== Running Test 14 ... ==== Test 14 ==== Secant.iterate() (err = DNF, f(z) = z^4-2)
+Correct Value: 2 Student Value: 2 Correct: true Marks available: 2 Marks awarded: 2 
+
+========== Running Test 15 ... ==== Test 15 ==== Project2.index() 
+Correct Value: Known root found, Invalid root not found Student Value: Known root found (1 Mark), Invalid root not found (1 Mark) Correct: true Marks available: 2 Marks awarded: 2 
+
+========== Running Test 16 ... ==== Test 16 ==== Project2.pixelToComplex() 
+Correct Value: -0.950-1.100i (dz = 0.00501253) Student Value: -0.950-1.100i (dz = 0.00500000) Slightly wrong dz, half marks awarded. Correct: true Marks available: 2 Marks awarded: 1 
+
+========== Running Test 17 ... ==== Test 17 ==== Project2.createFractal() 
+Correct Value: 1 Student Value: 1 Correct: true Marks available: 2 Marks awarded: 2 ========== 
+
+You scored 26 out of 29 Overall Mark: 90%

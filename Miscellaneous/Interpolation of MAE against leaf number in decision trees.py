@@ -1,3 +1,5 @@
+#For when I was messing around with interpolation and decision trees, good demonstration of tendency of counter productive oscillation of cubic splines
+
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeRegressor
